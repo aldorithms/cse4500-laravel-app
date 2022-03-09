@@ -1,6 +1,6 @@
 <?php
 
-return [
+$return = [
 
     /*
     |--------------------------------------------------------------------------
@@ -225,21 +225,26 @@ return [
     */
 
     'menu' => [
-    [
-        'type' => 'sidebar-menu-search',
-        'text' => 'search',
+        [
+            'type' => 'sidebar-menu-search',
+            'text' => 'search',
+        ],
+        [
+            'text' => 'To Do\'s',
+            'url'  => 'todos',
+            'icon' => 'fas fa-fw fa-file',
+        ],
+        [
+            'text' => 'Schedule',
+            'url'  => 'calendar',
+            'icon' => 'fas fa-fw fa-calendar-alt',
+        ],
+        [
+            'text' => 'Board',
+            'url'  => 'board',
+            'icon' => 'far fa-list-alt',
+        ]
     ],
-    [
-        'text' => 'To Do\'s',
-        'url'  => 'todos',
-        'icon' => 'fas fa-fw fa-file',
-    ],
-    [
-        'text' => 'Calendar',
-        'url'  => 'calendar',
-        'icon' => 'fas fa-fw fa-calendar-alt',
-    ],
-],
 
     /*
     |--------------------------------------------------------------------------
@@ -395,3 +400,9 @@ return [
 
     'livewire' => false,
 ];
+
+//dd($return);
+//var_dump($return);
+
+
+return $return;
