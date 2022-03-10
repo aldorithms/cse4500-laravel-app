@@ -11,8 +11,7 @@
   <div class="col-md-12">
     <div class="card card-primary">
       <div class="card-body p-0">
-        <div id="calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-bootstrap">
-        </div>
+        <div id="calendar" class="fc fc-media-screen fc-direction-ltr fc-theme-bootstrap"></div>
       </div>
     </div>
   </div>
