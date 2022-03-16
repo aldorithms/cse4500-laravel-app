@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-URL::forceScheme('https');
+//URL::forceScheme('https');
 
 Route::get('/', function () {
     return view('welcome');
@@ -41,4 +41,9 @@ Route::get('/db-test', function () {
     } catch (\Exception $e) {
           echo 'None';
     }
+});
+
+Route::get('/db-migrate', function () {
+    Artisan::call('migrate');
+    echo Artisan::output();
 });
