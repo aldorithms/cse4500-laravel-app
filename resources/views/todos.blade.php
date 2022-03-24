@@ -32,7 +32,7 @@
     </table>
   </div>
 </div>
-<form method="post" action="" >
+<form method="post" action="">
     @csrf
     <x-adminlte-input name="title" label="Title" />
     <x-adminlte-input name="begin" type="datetime-local" label="Start" />
